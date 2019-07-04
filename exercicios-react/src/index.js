@@ -6,6 +6,5 @@ const root = document.getElementById('root')
 
 ReactDOM.render(
    <div>
-      <PrimeiroComponent/>
-      <PrimeiroComponent/>
+      <PrimeiroComponent valor='1' aBcD={2**8}/>
    </div>, root)
