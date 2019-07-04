@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom'
 // import PrimeiroComponent from './components/PrimeiroComponent'
 // import CompA, {CompB as B} from './components/DoisComponents'
 // import MultiElementos from './components/MultiElementos'
-// import FamiliaSilva from './components/FamiliaSilva'
-import Familia from './components/Familia'
-import Membro from './components/Membro'
+import FamiliaSilva from './components/FamiliaSilva'
+// import Familia from './components/Familia'
+// import Membro from './components/Membro'
 const root = document.getElementById('root')
 
 ReactDOM.render(
@@ -13,15 +13,15 @@ ReactDOM.render(
       {/* <PrimeiroComponent valor='1' aBcD={2**8}/> */}
       {/* <CompA valor='Sou A'/> */}
       {/* <B valor='Sou B'/> */}
-      {/*<MultiElementos/> */}
-      {/* <FamiliaSilva/> */}
-      <Familia>
-         <Membro nome='Carlos' sobrenome='Roberto'/>
-         <Membro nome='Carla' sobrenome='Roberto'/>
-      </Familia>
+      {/* <MultiElementos/> */}
+      <FamiliaSilva sobrenome='Silva'/>
+      {/* <Familia sobrenome='Arruda'>
+         <Membro nome='Carlos'/>
+         <Membro nome='Carla'/>
+      </Familia> */}
 
-      <Familia>
-         <Membro nome='Felicia' sobrenome='Arruda'/>
-         <Membro nome='Roberta' sobrenome='Arruda'/>
-      </Familia>
+      {/* <Familia sobrenome='Arruda'>
+         <Membro nome='Felicia'/>
+         <Membro nome='Carlos'/>
+      </Familia> */}
    </div>, root)
