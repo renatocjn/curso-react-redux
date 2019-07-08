@@ -8,7 +8,8 @@ import ReactDOM from 'react-dom'
 // import Membro from './components/Membro'
 // import ComponentComFuncao from './components/ComponenteComFuncao'
 // import Pai from './components/Pai'
-import ComponentClasse from './components/ComponenteClasse'
+// import ComponentClasse from './components/ComponenteClasse'
+import Contador from './components/Contador'
 
 const root = document.getElementById('root')
 
@@ -34,6 +35,7 @@ ReactDOM.render(
 
       {/* <Pai/> */}
 
-      <ComponentClasse valor="Sou um componente de classe"/>
+      {/* <ComponentClasse valor="Sou um componente de classe"/> */}
 
+      <Contador/>
    </div>, root)
