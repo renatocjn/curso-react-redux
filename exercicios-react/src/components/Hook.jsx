@@ -7,7 +7,7 @@ export default props => {
    // Exemplo de hook de evento de ciclo de vida do componente
    useEffect(() => {
       contador % 2 === 0 ? setParOuImpar('Par') : setParOuImpar('Impar')
-   })
+   }, [contador])
 
    return (
       <div>
