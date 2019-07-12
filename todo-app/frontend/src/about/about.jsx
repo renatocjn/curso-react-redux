@@ -1,5 +1,5 @@
 import React, {PropTypes} from 'react';
 
-export default About = (props) => (
+export default (props) => (
      <div>Sobre</div>
 )
