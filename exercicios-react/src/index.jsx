@@ -10,26 +10,36 @@ import ReactDOM from 'react-dom'
 // import Pai from './components/Pai'
 // import ComponentClasse from './components/ComponenteClasse'
 // import Contador from './components/Contador'
-import Hook from './components/Hook'
+// import Hook from './components/Hook'
+import Field from './components/Field'
+import FieldReducer from './components/FieldReducer'
+
+import { combineReducers, createStore } from 'redux'
+import { Provider } from 'react-redux'
+
+const reducers = combineReducers({
+   field: FieldReducer
+})
 
 const root = document.getElementById('root')
 
 ReactDOM.render(
-   <div>
+   <Provider store={createStore(reducers)}>
+      {/* <div> */}
       {/* <PrimeiroComponent valor='1' aBcD={2**8}/> */}
       {/* <CompA valor='Sou A'/> */}
       {/* <B valor='Sou B'/> */}
-      {/* <MultiElementos/> */}
       {/* <FamiliaSilva sobrenome='Silva'/> */}
+      {/* <MultiElementos/> */}
 
       {/* <Familia sobrenome="Batista">
-         <Membro nome="Carlos"/>
-         <Membro nome="Carla"/>
+            <Membro nome="Carlos"/>
+            <Membro nome="Carla"/>
       </Familia> */}
 
       {/* <Familia sobrenome="Arruda">
-         <Membro nome="Felicia"/>
-         <Membro nome="Carlos"/>
+            <Membro nome="Felicia"/>
+            <Membro nome="Carlos"/>
       </Familia> */}
 
       {/* <ComponentComFuncao/> */}
@@ -40,5 +50,7 @@ ReactDOM.render(
 
       {/* <Contador/> */}
 
-      <Hook/>
-   </div>, root)
+      {/* <Hook/> */}
+      <Field />
+      {/* </div> */}
+   </Provider>, root)
